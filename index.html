@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backrooms Text Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-btn" data-lang="ru">RU</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="de">DE</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+    <button class="lang-btn" data-lang="ja">日本語</button>
+  </div>
+
+  <h1 class="glitch" data-text="BACKROOMS CONVERTER" id="title">BACKROOMS CONVERTER</h1>
+  <p class="subtitle" id="subtitle">// ты не должен был найти это место //</p>
+
+  <div class="container">
+
+    <div class="panel">
+      <label for="input" id="labelInput">Входной текст</label>
+      <textarea id="input" placeholder=""></textarea>
+    </div>
+
+    <div class="options" id="options">
+      <button class="option-btn active" data-mode="glitch"  data-i18n="mode_glitch">Глитч</button>
+      <button class="option-btn"        data-mode="zalgo"   data-i18n="mode_zalgo">Залго</button>
+      <button class="option-btn"        data-mode="noise"   data-i18n="mode_noise">Шум</button>
+      <button class="option-btn"        data-mode="corrupt" data-i18n="mode_corrupt">Искажение</button>
+      <button class="option-btn"        data-mode="shadow"  data-i18n="mode_shadow">Тень</button>
+    </div>
+
+    <div class="controls">
+      <button class="primary" id="convertBtn" data-i18n="btn_convert">Конвертировать</button>
+      <button id="copyBtn" data-i18n="btn_copy">Копировать</button>
+      <button id="clearBtn" data-i18n="btn_clear">Очистить</button>
+    </div>
+
+    <div class="panel">
+      <label for="output" id="labelOutput">Результат</label>
+      <textarea id="output" class="output" readonly placeholder=""></textarea>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+  </div>
+
+  <footer id="footer">LEVEL 0 — THE LOBBY &nbsp;|&nbsp; NO CLIPPING</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
