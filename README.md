@@ -58,7 +58,7 @@ Text detection also supports **Arabic**, **Hebrew**, and **Greek** input for the
 
 Open the live version:
 
-👉 **https://snitchwasta.github.io/backrooms-converter/**
+👉 **https://pallpik.github.io/backrooms-converter/**
 
 ### Locally
 
